@@ -46,9 +46,22 @@ article {
   top: 0;
 }
 
+.screenshot {
+  width: 67%
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px rgba(60, 60, 60, 0.67) solid;
+}
+
 #name {
   font-size: 36px;
 }
+
+
 
 #bio {
   position: absolute;
