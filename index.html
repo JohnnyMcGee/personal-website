@@ -5,40 +5,44 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,700;1,300;1,700&family=Varela+Round&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Roboto:ital@0;1&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div id="bio">
-            <h1>Hi, I'm <span id="name" class="primary-dark">Johnny McGee</span></h1>
-            <div id="bio-content">
-                <h4>
-                    App <span class="primary-dark">developer</span> in Georgetown, TX.
-                </h4>
-                <image id="texas" src="img/tx.png" />
+        <div id="header-title">
+            <h1 id="hello">Hi, I'm </h1>
+            <div id="name-flex">
+                <h1 id="name">Johnny</h1>
+                <h1 id="name">McGee</h1>
             </div>
         </div>
+        <!-- <div id="bio-content">
+            <h4>
+                <span class="primary-dark">Web-app Developer</span> in Georgetown, TX.
+            </h4>
+            <image id="texas" src="img/tx.png" />
+        </div> -->
     </header>
-    <div class="gradient"></div>
-    <section id="about">
-        <article class="project">
-            <div class="project-title">
-                <h2 class="primary">Go - Ancient Game of Strategy</h2>
-                <button class="launch-button">Launch App</button>
-            </div>
-            <img src="/img/go-react-playing.PNG" alt="" class="screenshot">
-        </article>
-        <article class="project">
-            <h2 class="primary">Pillager - Firebase Authentication Flow</h2>
-            <img src="/img/pillager-playing.PNG" alt="" class="screenshot">
-        </article>  
-    </section>
-    <section>
-    </section>
-
+    <div id="content-overlay">
+        <section>
+            <article class="project">
+                <div class="project-title">
+                    <h2>Go - Ancient Game of Strategy</h2>
+                    <button class="launch-button">Launch App</button>
+                </div>
+                <img src="/img/go-react-playing.PNG" alt="" class="screenshot">
+            </article>
+            <article class="project">
+                <h2 class="primary">Pillager - Firebase Authentication Flow</h2>
+                <img src="/img/pillager-playing.PNG" alt="" class="screenshot">
+            </article>
+        </section>
+    </div>
 </body>
 
 </html>
