@@ -2,6 +2,14 @@
 <html>
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400&family=Ubuntu:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+
+
+
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,30 +23,30 @@
 <body>
     <header>
         <div id="header-title">
-            <h1 id="hello">Hi, I'm </h1>
-            <div id="name-flex">
-                <h1 id="name">Johnny</h1>
-                <h1 id="name">McGee</h1>
+            <div class="name-flex">
+                <h1 class="hero-text">Johnny</h1>
+                <h1 class="hero-text">McGee</h1>
+            </div>
+            <div id="objective-text" class="name-flex">
+                <h3 class="title-accent">Application</h3>
+                <h3 class="title-accent">Developer</h3>
             </div>
         </div>
-        <!-- <div id="bio-content">
-            <h4>
-                <span class="primary-dark">Web-app Developer</span> in Georgetown, TX.
-            </h4>
-            <image id="texas" src="img/tx.png" />
-        </div> -->
     </header>
     <div id="content-overlay">
         <section>
+            <article id="about">
+                <!-- <p>Hi, I'm Johnny.</p> -->
+            </article>
+        </section>
+        <section>
+            <h1 class="section-title">PORTFOLIO</h1>
             <article class="project">
-                <div class="project-title">
-                    <h2>Go - Ancient Game of Strategy</h2>
-                    <button class="launch-button">Launch App</button>
-                </div>
+                <h2 class="article-title">Go - Ancient Game of Strategy</h2>
                 <img src="/img/go-react-playing.PNG" alt="" class="screenshot">
             </article>
             <article class="project">
-                <h2 class="primary">Pillager - Firebase Authentication Flow</h2>
+                <h2 class="article-title">Pillager - Firebase Authentication Flow</h2>
                 <img src="/img/pillager-playing.PNG" alt="" class="screenshot">
             </article>
         </section>
