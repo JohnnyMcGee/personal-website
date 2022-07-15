@@ -24,6 +24,42 @@ h2 {
   font-family: "Montserrat", "Roboto", Arial, Helvetica, sans-serif;
 }
 
+article {
+  padding: 8vh 0;
+}
+
+.view-case-study input {
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+  background-color: #004dc4;
+  border-radius: 10em;
+  font-family: "Roboto";
+  color: white;
+  font-size: large;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  margin: 1.8em;
+  transition: background-color 240ms;
+}
+
+.view-case-study input:hover {
+  background-color: #0064ff;
+  cursor: pointer;
+}
+
+.view-case-study input:active {
+  /* background-color: #003e9b; */
+  position: relative;
+  top: 2px;
+  left: 2px;
+  cursor: pointer;
+}
+
+button .material-symbols-outlined {
+  font-size: x-large;
+}
+
 .screenshot {
   width: 67%;
 }
@@ -32,20 +68,60 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px rgba(65, 65, 65, 0.78) solid;
-  padding: 3%;
+  padding: 6% 12% 4% 12%;
   color: white;
-}
-
-.project h2 {
-  padding-bottom: 8px;
-  display: inline;
+  text-align: center;
 }
 
 .project img {
-  height: 75vh;
+  max-width: 75vw;
+  max-height: 75vh;
   width: auto;
+  height: auto;
+  margin: 3em;
   border-radius: 3%;
+  position: relative;
+}
+
+.project:hover img {
+  margin-bottom: 3em;
+  max-width: 79vw;
+  max-height: 79vh;
+  top: -2vh;
+}
+
+.project img:active {
+  top: 0;
+  max-height: 77vh;
+  max-width: 77vw;
+}
+
+.project a {
+  text-decoration: none;
+}
+
+.project p {
+  font-size: large;
+}
+
+.gradient-background {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    10deg,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0.09) 50%,
+    rgba(255, 255, 255, 0) 80%
+  );
+}
+
+.gradient-background-reverse {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    350deg,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0.09) 50%,
+    rgba(255, 255, 255, 0) 80%
+  );
 }
 
 .launch-button {
@@ -66,6 +142,7 @@ h2 {
 .article-title {
   font-family: "Ubuntu";
   font-size: 2.4em;
+  margin: 0.2em;
 }
 
 #gradient-overlay {
@@ -159,13 +236,15 @@ h2 {
   top: -4vh;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1300px) {
   .hero-text {
     font-size: 7em;
     padding-right: 3rem;
+
+    transition: font-size 250ms;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
   .name-flex {
     flex-direction: column;
     align-items: end;
