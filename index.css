@@ -81,14 +81,15 @@ button .material-symbols-outlined {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6% 12% 4% 12%;
+  margin: 0 auto;
   color: white;
   text-align: center;
+  width: max-content;
 }
 
 .project img {
-  max-width: 75vw;
-  max-height: 75vh;
+  max-width: 73vw;
+  max-height: 73vh;
   width: auto;
   height: auto;
   margin: 3em;
@@ -98,15 +99,15 @@ button .material-symbols-outlined {
 
 .project:hover img {
   margin-bottom: 3em;
-  max-width: 79vw;
-  max-height: 79vh;
+  max-width: 76vw;
+  max-height: 76vh;
   top: -2vh;
 }
 
 .project img:active {
   top: 0;
-  max-height: 77vh;
-  max-width: 77vw;
+  max-height: 75vh;
+  max-width: 75vw;
 }
 
 .project a {
@@ -115,6 +116,10 @@ button .material-symbols-outlined {
 
 .project p {
   font-size: large;
+}
+
+.project-container {
+  margin: 12%;
 }
 
 .gradient-background {
