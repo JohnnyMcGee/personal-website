@@ -12,6 +12,7 @@ body {
   color: white;
   perspective: 1px;
   transform-style: preserve-3d;
+  scroll-snap-type: y proximity;
 }
 
 #parallax-background {
@@ -19,9 +20,9 @@ body {
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
-  transform: translateZ(-40px) scale(44);
+  transform: translateZ(-10px) scale(12);
   position: absolute;
-  height: 130%;
+  height: 210%;
   width: 100%;
 }
 
@@ -39,6 +40,15 @@ h2 {
 
 article {
   padding: 8vh 0;
+}
+
+article:first-of-type {
+  padding-top: 0;
+  scroll-snap-align: start;
+}
+
+p {
+  font-size: x-large;
 }
 
 .view-case-study input {
@@ -85,6 +95,7 @@ button .material-symbols-outlined {
   color: white;
   text-align: center;
   width: max-content;
+  max-width: 90vw;
 }
 
 .project img {
@@ -178,7 +189,7 @@ button .material-symbols-outlined {
   font-style: normal;
   font-size: 8em;
   padding: 0px 6rem;
-  color: rgba(0, 43, 111, 0.65);
+  color: rgb(0 16 40 / 65%);
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -192,6 +203,17 @@ button .material-symbols-outlined {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0 6rem;
+}
+
+#contact {
+  scroll-snap-align:start;
+  scroll-margin: 1 rem;
+  height: 100vh;
+}
+
+#contact h1, p {
+  color: white;
+  text-align: center;
 }
 
 #bio {
@@ -210,9 +232,8 @@ button .material-symbols-outlined {
   background: linear-gradient(
     180deg,
     rgba(0, 8, 14, 0) 0%,
-    rgba(0, 8, 14, 0.85) 10%
+    rgba(0, 8, 14, 0.85) 15%
   );
-  padding-top: 10%;
   position: relative;
 }
 
@@ -247,6 +268,24 @@ button .material-symbols-outlined {
 
 #about {
   color: white;
+  margin: 5vh;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 8vh;
+  scroll-snap-align: start;
+  scroll-margin: 50vh;
+}
+
+#about p {
+  margin-left: 50vw;
+  text-align: left;
+  font-family: "Ubuntu";
+  font-size: x-large;
+  padding-right: 0;
+  padding-top: 0;
+  margin-top: 0;
+  font-size: xx-large;
+  font-weight: 700;
 }
 
 #objective-text {
@@ -277,7 +316,10 @@ button .material-symbols-outlined {
     font-size: 2.5em;
   }
   .section-title {
+    margin: 0;
     font-size: 4em;
+    scroll-snap-align: start;
+    scroll-margin: 1rem;
   }
 
   #objective-text {
@@ -287,5 +329,13 @@ button .material-symbols-outlined {
 
   #header-title {
     padding: 0;
+  }
+  #about p {
+    text-align: right;
+    font-family: "Ubuntu";
+    font-size: x-large;
+    margin-left: 0;
+    transition-property: margin-left text-align;
+    transition-duration: 1s 1s;
   }
 }
