@@ -48,6 +48,17 @@ p {
   font-size: x-large;
 }
 
+.text-input {
+  font-family: "Ubuntu";
+  padding: 0.5em;
+  font-size: 1.4rem;
+  border-radius: 0.4em;
+}
+
+#email {
+  max-width: 36rem;
+}
+
 .button {
   background-color: white;
   color: black;
@@ -58,9 +69,10 @@ p {
   font-weight: 700;
   padding: 1em 2em;
   border-radius: 10em;
-  font-size: 2.8vh;
-  margin: 1.8em;
+  font-size: 1.25rem;
+  margin: 1.8em 0;
   transition: background-color 240ms;
+  width: max-content;
 }
 
 .button:hover {
@@ -68,19 +80,14 @@ p {
   color: white;
   border-color: azure;
   cursor: pointer;
-  font-size: 3vh;
+  font-size: 1.35rem;
 }
 
 .button:active {
-  /* background-color: #003e9b; */
   position: relative;
   top: 2px;
   left: 2px;
   cursor: pointer;
-}
-
-button .material-symbols-outlined {
-  font-size: x-large;
 }
 
 p i {
@@ -145,15 +152,6 @@ p i {
   );
 }
 
-.launch-button {
-  display: inline;
-  padding: 8px 16px;
-  border-radius: 32px;
-  background-color: #4cb44c;
-  color: black;
-  font-family: "Roboto Mono", monospace;
-}
-
 .section-title {
   text-align: center;
   font-size: 6em;
@@ -164,6 +162,11 @@ p i {
   font-family: "Ubuntu";
   font-size: 6vh;
   margin: 0.2em;
+}
+
+#message {
+  max-width: 54rem;
+  height: 12rem;
 }
 
 #gradient-overlay {
@@ -212,6 +215,19 @@ p i {
 p {
   color: white;
   text-align: center;
+}
+
+#contact h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  padding: 4vh 24vw;
+  justify-content: space-evenly;
+  height: max-content;
 }
 
 #bio {
@@ -286,11 +302,11 @@ p {
 }
 
 #about .button {
-  font-size: 3vh;
+  font-size: 1.39rem;
 }
 
 #about .button:hover {
-  font-size: 3.2vh;
+  font-size: 1.49rem;
 }
 
 #about span {
@@ -360,7 +376,7 @@ span {
   #about {
     margin: 0;
     margin-right: 1rem;
-    height:auto;
+    height: auto;
     padding-bottom: 0;
     scroll-snap-align: unset;
   }
@@ -385,9 +401,28 @@ span {
     scroll-snap-align: unset;
   }
 
-  #contact h1,
+  h1,
   #contact p {
     color: white;
     text-align: right;
+  }
+
+  #contact h1 {
+    font-size: 8vh;
+  }
+
+  #contact,
+  h3 {
+    padding-left: 0.2em;
+  }
+
+  #contact form {
+    padding: 2vh 2vw;
+  }
+
+  #contact .text-input {
+    max-width: 100%;
+    font-size: 2rem;
+    height: 3rem;
   }
 }
