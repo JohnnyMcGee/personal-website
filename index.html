@@ -5,8 +5,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400&family=Ubuntu:ital,wght@0,300;1,300&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,500;0,700;1,500;1,700&family=Ubuntu:ital,wght@0,300;0,500;1,300;1,500&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,40 +45,31 @@
     </header>
     <div id="content-overlay">
         <section>
-            <article id="about" class="scroll-snap-start">
+            <article id="about" class="scroll-snap-end">
                 <p>
-                    My <span
-                        style="font-weight:700;font-family:'Ubuntu';font-style:italic;font-size:2rem">passion</span>
-                    is taking problems apart <span class="material-symbols-outlined">
+                    My <span>passion</span>
+                    is taking apart problems and building <span>creative</span>
+                    solutions <i class="material-symbols-outlined">
                         settings
-                    </span><br />
-                    and building <span
-                        style="font-weight:700;font-family:'Ubuntu';font-style:italic;font-size:2rem">creative</span>
-                    solutions. <span class="material-symbols-outlined"><br />
-                        build
-                    </span>
-                    <br /><br />
-                    Thank you for your interest in my work.
-                    <br /><br />
-                    I look forward to working together if we're the right fit!
+                    </i>
+                    <br />
+                    If you are interested in working together,
                 </p>
+                <form action="#contact"><input class="button" type="submit" value="Let's Connect"></form>
+
             </article>
         </section>
         <section id="portfolio">
-            <h1 class="section-title">PORTFOLIO</h1>
-            <article id="bubble-brawl" class="gradient-background-reverse scroll-snap-start">
+            <h1 class="section-title" style="margin:0">PORTFOLIO</h1>
+            <article id="bubble-brawl" class="gradient-background-reverse">
                 <div class="project">
-                    <a target="_blank" href="https://www.juliankohann.com/project/bubble-brawl">
-                        <img src="/img/bubble-brawl.jpeg" alt="Bubble Brawl mobile game case study"
-                            title="Bubble Brawl mobile game case study" class="screenshot">
-                    </a>
+                    <img src="/img/bubble-brawl.jpeg" alt="Bubble Brawl mobile game case study"
+                        title="Bubble Brawl mobile game case study">
                     <h2 class="article-title">Bubble Brawl</h2>
                     <p>A game that brings people together, and usually devolves into chaos. <span
                             style="font-style:italic;">Case study by Julian Kohann</span></p>
-
-                    <form class="view-case-study" action="https://www.juliankohann.com/project/bubble-brawl"
-                        target="_blank">
-                        <input class="material-symbols-outlined" type="submit" value="View Case Study">
+                    <form action="https://www.juliankohann.com/project/bubble-brawl" target="_blank">
+                        <input class="button" type="submit" value="View Case Study">
                         </input>
                     </form>
                 </div>
@@ -82,14 +77,11 @@
             <article id="ancient-game" class="gradient-background">
                 <div class="project">
 
-                    <a title="Go - Ancient Game case study" alt="Go - Ancient Game case study" target="_blank"
-                        href="https://github.com/JohnnyMcGee/go-react">
-                        <img src="/img/go-react-dell-laptop.png" alt="" class="screenshot">
-                    </a>
+                    <img src="/img/go-react-dell-laptop.png" alt="Go - Ancient Game case study">
                     <h2 class="article-title">Go - Ancient Game of Strategy</h2>
                     <p>The ancient game of Go, written in Go programming language. React front-end</p>
-                    <form class="view-case-study" action="https://github.com/JohnnyMcGee/go-react" target="_blank">
-                        <input class="material-symbols-outlined" type="submit" value="View Case Study">
+                    <form action="https://github.com/JohnnyMcGee/go-react" target="_blank">
+                        <input class="button" type="submit" value="View Case Study">
                         </input>
                     </form>
                 </div>
@@ -98,36 +90,31 @@
             <article id="pillager" class="gradient-background-reverse">
                 <div class="project">
 
-                    <a target="_blank" href="https://github.com/JohnnyMcGee/pillager">
-                        <img src="/img/pillager-chrome.png" alt="Pillager - Flutter Firebase UI case study"
-                            title="Pillager - Flutter Firebase UI case study" class="screenshot">
-                    </a>
+                    <img src="/img/pillager-chrome.png" alt="Pillager - Flutter Firebase UI case study"
+                        title="Pillager - Flutter Firebase UI case study">
                     <h2 class="article-title">Pillager - Flutter Firebase UI Flow</h2>
                     <p>Implementing login, user account settings, authenticated database access and more.</p>
-                    <form class="view-case-study" action="https://github.com/JohnnyMcGee/pillager" target="_blank">
-                        <input class="material-symbols-outlined" type="submit" value="View Case Study">
+                    <form action="https://github.com/JohnnyMcGee/pillager" target="_blank">
+                        <input class="button" type="submit" value="View Case Study">
                         </input>
                     </form>
                 </div>
             </article>
             <article id="jdmcgee" class="gradient-background">
                 <div class="project">
-                    <a target="_blank" href="https://jdmcgee.com/jdmwp/">
-                        <img src="img\pixel-2-jdmcgee.png" title="JD McGee, inc. business website case study"
-                            alt="JD McGee, inc. business website case study" class="screenshot">
-                    </a>
+                    <img src="img\pixel-2-jdmcgee.png" title="JD McGee, inc. business website case study"
+                        alt="JD McGee, inc. business website case study">
                     <h2 class="article-title">J.D. McGee, Inc. Engineering & Surveying</h2>
                     <p>Solving problems for you -- building a modern, custom business website.</p>
-                    <form class="view-case-study" action="https://jdmcgee.com/jdmwp/" target="_blank">
-                        <input class="material-symbols-outlined" type="submit" value="View Case Study">
+                    <form action="https://jdmcgee.com/jdmwp/" target="_blank">
+                        <input class="button" type="submit" value="View Case Study">
                         </input>
                     </form>
                 </div>
             </article>
-
         </section>
         <section>
-            <article id="contact" class="scroll-snap-start">
+            <article id="contact">
                 <h1 class="hero-text">Contact Me</h1>
                 <form action="">
                     <h3>Email</h3>
