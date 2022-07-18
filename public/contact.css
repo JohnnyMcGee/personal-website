@@ -29,11 +29,12 @@ form {
   flex-direction: column;
   padding: 4vh 24vw;
   justify-content: space-evenly;
+  transition: all 540ms;
 }
 
 .hero-text {
   color: white;
-  font-size: 12vh;
+  font-size: calc(3rem + 6vh);
 }
 
 .required {
@@ -45,6 +46,16 @@ form {
 .text-input {
   border-radius: 1em;
   padding: 0.8em 1em;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2vh 2vw;
+  background-color: black;
+  min-height: 100%;
+  transition: all 540ms;
 }
 
 /* small browser and mobile */
@@ -68,21 +79,12 @@ form {
   }
 
   .hero-text {
-    font-size: 8vh;
+    font-size: calc(3rem + 2.5vh);
   }
 
   .text-input {
     max-width: 100%;
   }
-}
-
-#container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 2vh 2vw;
-  background-color: black;
-  min-height: 100%;
 }
 
 /* mobile screen (adjust for higher density)*/
@@ -98,6 +100,10 @@ form {
 
   .button {
     font-size: 2.5rem;
+  }
+
+  .hero-text {
+    font-size: calc(3rem + 3.5vh);
   }
 
   .required {
