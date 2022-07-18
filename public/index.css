@@ -400,11 +400,7 @@ span {
     scroll-snap-align: unset;
   }
 
-  .required {
-    font-size: large;
-    color: red;
-    vertical-align: top;
-  }
+
   #phone {
     max-width: 22em;
   }
