@@ -25,7 +25,7 @@ app.post("/contact-submit", (req, res) => {
     email: req.body.email,
     phone: req.body.phone,
     message: req.body.message,
-    dateTime: Timestamp.fromDate(new Date.now()),
+    dateTime: Timestamp.now(),
   });
   res.redirect("/");
 });

@@ -79,14 +79,12 @@ input:invalid {
   color: black;
   font-family: "Rubik";
   letter-spacing: 2px;
-  transition-property: all;
-  transition-duration: 120ms;
   font-weight: 700;
   padding: 1em 2em;
   border-radius: 10em;
   font-size: 1.25rem;
   margin: 1.8em 0;
-  transition: background-color 240ms;
+  transition: all 240ms;
   width: max-content;
 }
 
@@ -225,34 +223,10 @@ p i {
   scroll-margin: 1 rem;
 }
 
-#contact h4 {
-  text-align: left;
-  margin: 0;
-  color: red;
-  font-size: large;
-}
-
-#contact h1,
+h1,
 p {
   color: white;
   text-align: center;
-}
-
-#contact h3 {
-  font-size: x-large;
-  margin-bottom: 1rem;
-}
-
-#contact h3:first-of-type {
-  margin-top: 1vh;
-}
-
-#contact form {
-  display: flex;
-  flex-direction: column;
-  padding: 4vh 24vw;
-  justify-content: space-evenly;
-  height: max-content;
 }
 
 #bio {
@@ -296,6 +270,7 @@ p {
 
 #portfolio {
   padding-top: 7vh;
+  padding-bottom: 7vh;
 }
 
 #about {
@@ -411,8 +386,7 @@ span {
     text-align: right;
     font-family: "Ubuntu";
     font-size: 3vh;
-    transition-property: margin-left text-align;
-    transition-duration: 1s 1s;
+    transition: all 120ms;
   }
 
   #about span {
@@ -431,33 +405,13 @@ span {
     color: red;
     vertical-align: top;
   }
-
-  h1,
-  #contact p {
-    color: white;
-    text-align: right;
-  }
-
-  #contact h1 {
-    font-size: 8vh;
-  }
-
-  #contact,
-  h3 {
-    padding-left: 0.2em;
-    font-size: x-large;
-  }
-
-  #contact form {
-    padding: 2vh 2vw;
-  }
-
   #phone {
     max-width: 22em;
   }
 
-  #contact .text-input {
-    max-width: 100%;
-    font-size: large;
+  #contact h1 {
+    font-size: 8vh;
+    color: white;
+    text-align: right;
   }
 }
