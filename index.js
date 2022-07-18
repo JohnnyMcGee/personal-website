@@ -16,10 +16,17 @@ const port = 80;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// get homepage
 app.use("/", express.static(path.join(__dirname, "public")));
 
+// get contact
+app.use(
+  "/contact/",
+  express.static(path.join(__dirname, "public"), { index: "contact.html" })
+);
+
 // send form contents to firestore
-app.post("/contact-submit", (req, res) => {
+app.post("/contact/", (req, res) => {
   db.collection("contact-forms").add({
     fullName: req.body.full_name,
     email: req.body.email,

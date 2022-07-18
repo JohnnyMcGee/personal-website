@@ -29,11 +29,11 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="contact.css">
 </head>
-
+    
 <body>
     <section id="container">
         <h1 class="hero-text">Contact Me</h1>
-        <form action="/contact-submit" method="POST">
+        <form action="/contact/" method="POST">
             <h4 class="required">* required field</h4>
             <h3>Full Name<span class="required"> *</span></h3>
             <input type="text" minlength="2" maxlength="64" required="required" name="full_name" class="text-input"
@@ -45,8 +45,8 @@
             <input type="tel" name="phone" minlength="10" maxlength="20" class="text-input" id="phone"
                 pattern='^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$'>
             <h3>Message<span class="required"> *</span></h3>
-            <input type="text" required="required" minlength="1" maxlength="10000" name="message" id="message"
-                class="text-input"></input>
+            <textarea required="required" minlength="1" maxlength="10000" name="message" id="message"
+                class="text-input"></textarea>
             <input type="submit" value="Send" class="button">
         </form>
     </section>

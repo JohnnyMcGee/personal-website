@@ -171,9 +171,9 @@ p i {
   font-family: "Ubuntu";
 }
 
-.article-title {
+.project h2 {
   font-family: "Ubuntu";
-  font-size: 6vh;
+  font-size: 3.6rem;
   margin: 0.2em;
 }
 
@@ -221,12 +221,41 @@ p i {
 
 #contact {
   scroll-margin: 1 rem;
+  padding: 15vh 0;
+  min-height: 64vh;
+  background: rgb(239, 242, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(186, 227, 255, 0.3) 33%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
-h1,
+#contact h1,
 p {
   color: white;
   text-align: center;
+  padding: 0 2rem;
+}
+
+#contact h1 {
+  font-size: 12vh;
+}
+
+#contact p {
+  line-height: 2;
+  font-size: xx-large;
+}
+
+#contact form {
+  margin: 6vh 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#contact input {
+  margin: 0 2rem;
 }
 
 #bio {
@@ -284,6 +313,7 @@ p {
 }
 
 #about p {
+  max-width: 90vw;
   width: max-content;
   margin: 0 auto;
   text-align: center;
@@ -301,11 +331,11 @@ p {
   margin: 0 auto;
 }
 
-#about .button {
+.cta-button {
   font-size: 1.39rem;
 }
 
-#about .button:hover {
+.cta-button:hover {
   font-size: 1.49rem;
 }
 
@@ -400,14 +430,38 @@ span {
     scroll-snap-align: unset;
   }
 
-
   #phone {
     max-width: 22em;
   }
+}
 
+/* mobile screen (adjust for higher density)*/
+@media only screen and (min-resolution: 200dpi) {
   #contact h1 {
     font-size: 8vh;
-    color: white;
-    text-align: right;
+  }
+
+  #contact p {
+    font-size: 2.5rem;
+  }
+
+  .button {
+    font-size: 2.5rem;
+  }
+
+  .button:hover {
+    font-size: 2.6rem;
+  }
+
+  .cta-button {
+    font-size: 3rem;
+  }
+
+  .cta-button {
+    font-size: 3.1rem;
+  }
+
+  .project h2 {
+    font-size: 5.5rem;
   }
 }
