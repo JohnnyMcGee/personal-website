@@ -1,44 +1,33 @@
-const { initializeApp } = require("firebase/app");
 const express = require("express");
 const path = require("path");
-// const { body, validationResult } = require("express-validator");
-var bodyParser = require("body-parser");
+const bodyParser = require("body-parser");
+
+const { initializeApp, cert } = require("firebase-admin/app");
+const { getFirestore, Timestamp } = require("firebase-admin/firestore");
+
+const serviceAccount = require("./google-services.json");
+initializeApp({
+  credential: cert(serviceAccount),
+});
+const db = getFirestore();
 
 const app = express();
 const port = 80;
 
-app.use(bodyParser.json()); // to support JSON-encoded bodies
-app.use(
-  bodyParser.urlencoded({
-    // to support URL-encoded bodies
-    extended: true,
-  })
-);
-// app.use(express.json()); // to support JSON-encoded bodies
-// app.use(express.urlencoded()); // to support URL-encoded bodies
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/", express.static(path.join(__dirname, "public")));
 
-const firebaseInit = () => {
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyD_F99wD_6rErCvfQEtOXwZOligaQAvIq0",
-    authDomain: "johnny-mcgee-website.firebaseapp.com",
-    projectId: "johnny-mcgee-website",
-    storageBucket: "johnny-mcgee-website.appspot.com",
-    messagingSenderId: "991571377236",
-    appId: "1:991571377236:web:0bfe30093b747408f141c1",
-  };
-
-  // Initialize Firebase
-  firebaseInit();
-  const app = initializeApp(firebaseConfig);
-};
-
-// validate input and store the form data
+// send form contents to firestore
 app.post("/contact-submit", (req, res) => {
-  console.log(req.body);
-  res.send("Hello World!");
+  db.collection("contact-forms").add({
+    fullName: req.body.full_name,
+    email: req.body.email,
+    phone: req.body.phone,
+    message: req.body.message,
+    dateTime: Timestamp.fromDate(new Date.now()),
+  });
+  res.redirect("/");
 });
 
 app.listen(port, () => {

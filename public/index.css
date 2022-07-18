@@ -48,15 +48,30 @@ p {
   font-size: x-large;
 }
 
+input:invalid {
+  border: 2px solid red;
+}
+
 .text-input {
   font-family: "Ubuntu";
   padding: 0.5em;
   font-size: 1.4rem;
-  border-radius: 0.4em;
+  border-radius: 1.25em;
+  transition: all 360ms;
+}
+
+.text-input:focus {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  border-color: azure;
+}
+
+#phone {
+  max-width: 22em;
 }
 
 #email {
-  max-width: 36rem;
+  max-width: 64em;
 }
 
 .button {
@@ -208,7 +223,13 @@ p i {
 
 #contact {
   scroll-margin: 1 rem;
-  height: 100vh;
+}
+
+#contact h4 {
+  text-align: left;
+  margin: 0;
+  color: red;
+  font-size: large;
 }
 
 #contact h1,
@@ -218,8 +239,12 @@ p {
 }
 
 #contact h3 {
-  font-size: 2.4rem;
+  font-size: x-large;
   margin-bottom: 1rem;
+}
+
+#contact h3:first-of-type {
+  margin-top: 1vh;
 }
 
 #contact form {
@@ -401,6 +426,12 @@ span {
     scroll-snap-align: unset;
   }
 
+  .required {
+    font-size: large;
+    color: red;
+    vertical-align: top;
+  }
+
   h1,
   #contact p {
     color: white;
@@ -414,15 +445,19 @@ span {
   #contact,
   h3 {
     padding-left: 0.2em;
+    font-size: x-large;
   }
 
   #contact form {
     padding: 2vh 2vw;
   }
 
+  #phone {
+    max-width: 22em;
+  }
+
   #contact .text-input {
     max-width: 100%;
-    font-size: 2rem;
-    height: 3rem;
+    font-size: large;
   }
 }
