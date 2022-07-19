@@ -22,7 +22,7 @@ app.use("/", express.static(path.join(__dirname, "public")));
 // get contact
 app.use(
   "/contact/",
-  express.static(path.join(__dirname, "public"), { index: "contact.html" })
+  express.static(path.join(__dirname, "public"), { index: "pages/contact.html" })
 );
 
 // send form contents to firestore

@@ -5,6 +5,10 @@ body {
   height: 100%;
   overflow-x: hidden;
 }
+
+html {
+  background-color: black;
+}
 h4 {
   margin: 0.5rem;
 }
@@ -53,9 +57,10 @@ form {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 2vh 2vw;
-  background-color: black;
   min-height: 100%;
   transition: all 540ms;
+  position: relative;
+  top: 50px;
 }
 
 /* small browser and mobile */
