@@ -63,6 +63,10 @@ form {
   top: 50px;
 }
 
+#parallax-background {
+  background-image: url("/img/contact-background.jpg");
+}
+
 /* small browser and mobile */
 @media only screen and (max-width: 1100px) {
   h1,
