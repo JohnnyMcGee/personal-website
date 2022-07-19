@@ -2,8 +2,8 @@
   background: rgb(0, 0, 0);
   background: linear-gradient(
     20deg,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgb(62 104 126 / 80%) 100%
+    rgba(0, 0, 0, 0.5) 0%,
+    rgb(62 104 126 / 50%) 100%
   );
   position: sticky;
   top: 0;

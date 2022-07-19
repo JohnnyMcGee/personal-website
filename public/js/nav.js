@@ -9,7 +9,8 @@ window.addEventListener('scroll', () => {
 //   var currentScrollPos = window.pageYOffset;
 //   if (prevScrollpos > currentScrollPos) {
 //     document.getElementById("nav").style.top = "0";
-//   } else {
+//   } else {background: rgb(0, 0, 0);
+    background: linear-gradient( 20deg, rgba(0, 0, 0, 0.5) 0%, rgb(62 104 126 / 50%) 100% );
 //     document.getElementById("nav").style.top = "-100px";
 //   }
 //   prevScrollpos = currentScrollPos;
