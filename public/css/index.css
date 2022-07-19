@@ -17,7 +17,7 @@ body {
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
-  transform: translateZ(-50px) scale(52);
+  transform: translateZ(-50px) scale(53);
   position: absolute;
   top: 0;
   width: 100%;
@@ -30,7 +30,6 @@ header {
   height: 100%;
   width: 100%;
   position: relative;
-  top: 50px;
 }
 
 h1,
