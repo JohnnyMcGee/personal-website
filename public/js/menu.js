@@ -29,10 +29,16 @@ const showNavbar = () => (document.getElementById("navbar").style.top = "0");
 let scrollPos = document.body.scrollTop;
 const onScroll = (e) => {
   let newScroll = document.body.scrollTop;
-  const isScrollDown = newScroll > scrollPos;
-  isScrollDown ? hideNavbar() : showNavbar();
-  scrollPos = newScroll;
-
+  const scrollMargin = 75;
+  const isScrollDown = newScroll > scrollPos + scrollMargin;
+  const isScrollUp = newScroll < scrollPos - scrollMargin;
+  if (isScrollDown) {
+    hideNavbar();
+    scrollPos = newScroll;
+  } else if (isScrollUp) {
+    showNavbar();
+    scrollPos = newScroll;
+  }
   if (toggle.checked) closeMenu();
 };
 
