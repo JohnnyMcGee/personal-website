@@ -29,8 +29,8 @@ const showNavbar = () => (document.getElementById("navbar").style.top = "0");
 let scrollPos = document.body.scrollTop;
 const onScroll = (e) => {
   let newScroll = document.body.scrollTop;
-  const scrollMargin = 75;
-  const isScrollDown = newScroll > scrollPos + scrollMargin;
+  let scrollMargin = document.getElementById("navbar").clientHeight * 0.1;
+  const isScrollDown = newScroll > scrollPos;
   const isScrollUp = newScroll < scrollPos - scrollMargin;
   if (isScrollDown) {
     hideNavbar();

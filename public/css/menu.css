@@ -12,89 +12,65 @@
   top: 0;
   z-index: 1;
   height: 12vh;
-  transition: all 240ms ease-in-out;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 12vh;
-  width: 100%;
-  margin: auto;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0) 85%,
-    rgba(0, 0, 0, 0.65) 100%
+    rgba(0, 0, 0, 0.45) 100%
   );
+  transition: all 360ms ease-in-out;
+}
+
+.nav-container {
+  position: absolute;
+  display: flex;
+  width: 12vh;
+  top: 0;
+  right: 2.5rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  margin-left: auto;
   opacity: 90%;
   transition: all 240ms ease-in-out;
-}
-
-.nav-container:hover {
-  opacity: 100%;
-}
-
-.navbar .menu-items {
-  display: flex;
-  z-index: 1;
-  position: relative;
-  background-color: hsl(0deg 0% 0% / 65%);
 }
 
 .navbar .nav-container li {
   list-style: none;
 }
 
-.navbar .menu-items a {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.2rem;
-  padding: 0.7rem;
-  color: white;
-  font-family: "Ubuntu";
-  font-size: 2.25rem;
-}
-
 .navbar .nav-container a:hover {
   font-weight: bolder;
 }
 
-.nav-container {
-  display: block;
-  position: relative;
-}
-
 .nav-container .checkbox {
   position: absolute;
-  display: block;
+  display: relative;
   height: 12vh;
   width: 12vh;
-  top: 0;
-  right: 2.5rem;
   z-index: 4;
   opacity: 0;
   cursor: pointer;
 }
 
 .nav-container .hamburger-lines {
-  display: block;
-  width: 2.5rem;
-  top: 4.5vh;
-  right: 4vw;
-  height: 1.75rem;
-  width: 2.25rem;
-  position: absolute;
+  height: 31%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 3;
   transition: all 240ms ease-in-out;
+  margin: auto;
+}
+
+.nav-container .checkbox:hover ~ .hamburger-lines {
+  height: 40%;
 }
 
 .nav-container .checkbox:checked:hover ~ .hamburger-lines {
-  transform: scale(1.2);
+  height: 39%;
+  width: 50%;
 }
 
 .nav-container .hamburger-lines .line {
@@ -121,24 +97,33 @@
 
 .navbar .menu-items {
   padding-top: 10vh;
-  box-shadow: inset 0 0 2000px rgb(0 0 0 / 80%);
+  box-shadow: inset 0 0 2000px rgb(0 0 0 / 85%);
   height: 100vh;
   width: 80vw;
   max-width: 24rem;
   transform: translateX(100%);
   display: flex;
   flex-direction: column;
-  transition: transform 120ms ease-in-out;
+  transition: transform 120ms;
   text-align: center;
   position: absolute;
   right: -5vw;
   top: 0;
+  z-index: 1;
+  background-color: hsl(0deg 0% 0% / 75%);
+}
+
+.navbar .menu-items a {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.7rem;
+  color: white;
+  font-family: "Ubuntu";
+  font-size: 2.25rem;
 }
 
 .navbar .menu-items li {
   margin: 4vh 4vw 4vh 0;
-  font-size: 1.5rem;
-  font-weight: 500;
 }
 
 .logo {
@@ -192,8 +177,33 @@
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  .navbar {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 75%,
+      rgba(0, 0, 0, 0.65) 100%
+    );
+  }
+}
+
 @media only screen and (min-resolution: 200dpi) {
   .navbar {
-    height: 2rem;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 65%,
+      rgba(0, 0, 0, 0.65) 100%
+    );
+  }
+  .navbar .menu-items {
+    max-width: 64rem;
+    padding-top: 12rem;
+    background-color: black;
+  }
+
+  .navbar .menu-items a {
+    font-size: 4.5rem;
   }
 }
