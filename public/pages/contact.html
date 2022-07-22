@@ -35,11 +35,12 @@
 </head>
 
 <body>
+    <script src="/js/menu.js"></script>
     <div id="parallax-background">
         <div style="background-color: rgba(0, 0, 0, 0.502);height:100%;width:100%;"></div>
     </div>
 
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <div class="container nav-container">
             <input class="checkbox" type="checkbox" name="" id="menu-toggle" />
             <div class="hamburger-lines">
@@ -73,18 +74,6 @@
             <input type="submit" value="Send" class="button">
         </form>
     </section>
-    <script>
-        window.addEventListener('click', function (e) {
-            const toggle = document.getElementById('menu-toggle');
-            if (toggle.checked) {
-                const clickedOutside = (!document.getElementById('menu').contains(e.target));
-                const clickedOutsideToggle = (!toggle.contains(e.target));
-                if (clickedOutside && clickedOutsideToggle) {
-                    toggle.checked = false;
-                }
-            }
-        });
-    </script>
 </body>
 
 </html>

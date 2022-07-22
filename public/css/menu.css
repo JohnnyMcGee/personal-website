@@ -12,6 +12,7 @@
   top: 0;
   z-index: 1;
   height: 12vh;
+  transition: all 240ms ease-in-out;
 }
 
 .nav-container {
@@ -127,7 +128,7 @@
   transform: translateX(100%);
   display: flex;
   flex-direction: column;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 120ms ease-in-out;
   text-align: center;
   position: absolute;
   right: -5vw;
@@ -188,5 +189,11 @@
 
   .navbar .menu-items {
     background-color: hsl(0deg 0% 0% / 85%);
+  }
+}
+
+@media only screen and (min-resolution: 200dpi) {
+  .navbar {
+    height: 2rem;
   }
 }
