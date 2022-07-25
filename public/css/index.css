@@ -358,13 +358,13 @@ textarea.text-input {
 
 @media only screen and (orientation: landscape) {
   .text-input {
-    font-size: 1.75rem;
+    font-size: 1.85rem;
   }
 }
 
 @media only screen and (max-resolution: 200dpi) {
   .text-input {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 
