@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <div id="parallax-background"></div>
+    <div class="parallax background"></div>
     <div class="navbar" id="navbar">
         <div class="container nav-container">
             <input class="checkbox" type="checkbox" name="" id="menu-toggle" />
@@ -43,104 +43,103 @@
                 <span class="line line3"></span>
             </div>
             <div class="menu-items" id="menu">
-                <li><a tabindex="-1" href="/#parallax-background">Home</a></li>
+                <li><a tabindex="-1" href="/">Home</a></li>
                 <li><a tabindex="-1" href="/#portfolio">Portfolio</a></li>
                 <li><a tabindex="-1" href="/contact/">Contact</a></li>
             </div>
         </div>
     </div>
-    <header>
-        <div id="header-title">
-            <div class="name-flex">
-                <h1 class="hero-text">Johnny</h1>
-                <h1 class="hero-text">McGee</h1>
+    <header class="fullscreen flex-col">
+        <div class="sticky-header">
+            <div class="responsive-wrap">
+                <h1 class="hero-text pad-x-2 dark-text">Johnny</h1>
+                <h1 class="hero-text pad-x-2 dark-text">McGee</h1>
             </div>
-            <div id="objective-text" class="name-flex typewriter">
-                <h3 class="title-accent">Application</h3>
-                <h3 class="title-accent">Developer</h3>
+            <div class="responsive-wrap shift-up">
+                <h4 class="subtitle-text pad-x-2">Application</h4>
+                <h4 class="subtitle-text pad-x-2">Developer</h4>
             </div>
         </div>
     </header>
-    <div id="content-overlay">
+    <div class="transp-grad scroll-content">
         <section>
-            <article id="about" class="scroll-snap-end">
-                <p>
-                    My <span>passion</span>
-                    is taking apart problems and building <span>creative</span>
-                    solutions <i class="material-symbols-outlined">
+            <article id="about" class="zero-top flex-col">
+                <h5 class="display-text move-right zero-top">
+                    My <span class="accent-text">passion</span>
+                    is taking apart problems and building <span class="accent-text">creative</span>
+                    solutions <i class="material-symbols-outlined accent">
                         settings
                     </i>
                     <br />
                     If you are interested in working together,
-                </p>
-                <form action="/contact/"><input class="button cta-button" type="submit" value="Let's Connect"></form>
+                </h5>
+                <form class="centered pad-y" action="/contact/"><input class="button" type="submit"
+                        value="Let's Connect">
+                </form>
 
             </article>
         </section>
-        <section id="portfolio">
-            <h1 class="section-title" style="margin:0">PORTFOLIO</h1>
-            <article id="bubble-brawl" class="gradient-background-reverse">
-                <div class="project">
+        <section id="portfolio" class="flex-col">
+            <h2 class="heading-text">PORTFOLIO</h2>
+            <article id="bubble-brawl" class="full-width gradient-350deg zero-top">
+                <div class="flex-col centered pad-x-2">
                     <img src="/img/bubble-brawl.jpeg" alt="Bubble Brawl mobile game case study"
                         title="Bubble Brawl mobile game case study">
-                    <h2 class="article-title">Bubble Brawl</h2>
+                    <h3>Bubble Brawl</h3>
                     <p>A game that brings people together, and usually devolves into chaos. <span
                             style="font-style:italic;">Case study by Julian Kohann</span></p>
-                    <form action="https://www.juliankohann.com/project/bubble-brawl" target="_blank">
+                    <form class="centered" action="https://www.juliankohann.com/project/bubble-brawl" target="_blank">
                         <input class="button" type="submit" value="View Case Study">
                         </input>
                     </form>
                 </div>
             </article>
-            <article id="ancient-game" class="gradient-background">
-                <div class="project">
-
+            <article id="ancient-game" class="full-width gradient-10deg">
+                <div class="flex-col centered">
                     <img src="/img/go-react-dell-laptop.png" alt="Go - Ancient Game case study">
-                    <h2 class="article-title">Go - Ancient Game of Strategy</h2>
+                    <h3>Go - Ancient Game of Strategy</h3>
                     <p>The ancient game of Go, written in Go programming language. React front-end</p>
-                    <form action="https://github.com/JohnnyMcGee/go-react" target="_blank">
-                        <input class="button" type="submit" value="View Case Study">
+                    <form class="centered" action="https://github.com/JohnnyMcGee/go-react" target="_blank">
+                        <input class="button" type="submit" value="View Project">
                         </input>
                     </form>
                 </div>
             </article>
 
-            <article id="pillager" class="gradient-background-reverse">
-                <div class="project">
+            <article id="pillager" class="full-width gradient-350deg">
+                <div class="flex-col centered">
 
                     <img src="/img/pillager-chrome.png" alt="Pillager - Flutter Firebase UI case study"
                         title="Pillager - Flutter Firebase UI case study">
-                    <h2 class="article-title">Pillager - Flutter Firebase UI Flow</h2>
+                    <h3>Pillager - Flutter Firebase UI Flow</h3>
                     <p>Implementing login, user account settings, authenticated database access and more.</p>
-                    <form action="https://github.com/JohnnyMcGee/pillager" target="_blank">
-                        <input class="button" type="submit" value="View Case Study">
+                    <form class="centered" action="https://github.com/JohnnyMcGee/pillager" target="_blank">
+                        <input class="button" type="submit" value="View Project">
                         </input>
                     </form>
                 </div>
             </article>
-            <article id="jdmcgee" class="gradient-background">
-                <div class="project">
+            <article id="jdmcgee" class="full-width gradient-10deg">
+                <div class="flex-col centered">
                     <img src="img\pixel-2-jdmcgee.png" title="JD McGee, inc. business website case study"
                         alt="JD McGee, inc. business website case study">
-                    <h2 class="article-title">J.D. McGee, Inc. Engineering & Surveying</h2>
+                    <h3>J.D. McGee, Inc. Engineering & Surveying</h3>
                     <p>Solving problems for you -- building a modern, custom business website.</p>
-                    <form action="https://jdmcgee.com/jdmwp/" target="_blank">
-                        <input class="button" type="submit" value="View Case Study">
+                    <form class="centered" action="https://jdmcgee.com/jdmwp/" target="_blank">
+                        <input class="button" type="submit" value="View Website">
                         </input>
                     </form>
                 </div>
             </article>
         </section>
-        <section>
-            <article id="contact">
-
-                <h1 class="hero-text">Contact Me</h1>
-                <p>Thanks for stopping by.
-                    <br>
-                    To request a consultation or discuss a project,
-                </p>
-                <form action="/contact/"><input class="button cta-button" type="submit" value="Let's Connect"></form>
-            </article>
+        <section id="contact" class="transp-grad-light pad-x-2 flex-col fill-page-height">
+            <h2 class="heading-text">Let's Connect</h2>
+            <h5 class="double-space">Thanks for stopping by!
+                <br>
+                To request a consultation or discuss a project,
+            </h5>
+            <form class="centered" action="/contact/"><input class="button" type="submit" value="Contact Me">
+            </form>
         </section>
     </div>
     <script src="/js/menu.js">
