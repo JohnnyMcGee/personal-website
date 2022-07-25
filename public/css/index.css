@@ -209,21 +209,21 @@ form.flex-col {
 }
 
 .gradient-10deg {
-  background: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.25);
   background: linear-gradient(
     10deg,
     rgba(255, 255, 255, 0) 20%,
-    rgba(255, 255, 255, 0.09) 50%,
+    rgba(0, 0, 0, 0.25) 50%,
     rgba(255, 255, 255, 0) 80%
   );
 }
 
 .gradient-350deg {
-  background: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.25);
   background: linear-gradient(
     350deg,
     rgba(255, 255, 255, 0) 20%,
-    rgba(255, 255, 255, 0.09) 50%,
+    rgba(0, 0, 0, 0.25) 50%,
     rgba(255, 255, 255, 0) 80%
   );
 }
