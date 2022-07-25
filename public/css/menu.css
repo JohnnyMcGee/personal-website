@@ -11,7 +11,7 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  height: 12vh;
+  height: 10rem;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
@@ -24,15 +24,25 @@
 .nav-container {
   position: absolute;
   display: flex;
-  width: 12vh;
+  width: 10rem;
   top: 0;
   right: 2.5rem;
   justify-content: space-between;
   align-items: center;
-  height: 12vh;
+  height: 10rem;
   margin-left: auto;
   opacity: 90%;
   transition: all 240ms ease-in-out;
+}
+
+@media only screen and (max-resolution: 200dpi) {
+  .navbar {
+    height: 5rem;
+  }
+  .nav-container {
+    height: 5rem;
+    width: 5rem;
+  }
 }
 
 .navbar .nav-container li {
