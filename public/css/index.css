@@ -52,13 +52,14 @@ p i {
 }
 
 input:invalid {
-  border: 2px solid red;
+  border: 0.1rem solid red;
 }
 
 form {
   row-gap: 2.75rem;
   transition: all 540ms;
   padding: 3vh 2vw;
+  position: relative;
 }
 
 img {
@@ -129,12 +130,6 @@ section {
 .zero-top {
   margin-top: 0;
   padding-top: 0;
-}
-
-.offset-top-50 {
-  min-height: 100%;
-  position: relative;
-  top: 50px;
 }
 
 .centered {
@@ -380,7 +375,7 @@ textarea.text-input {
   font-family: "Rubik";
   font-size: 2.6rem;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 0.25rem;
   margin: 1.8em 0;
   padding: 1em 2em;
   transition: all 240ms ease-in-out;
@@ -397,8 +392,8 @@ textarea.text-input {
 
 .button:active {
   position: relative;
-  top: 2px;
-  left: 2px;
+  top: 0.25rem;
+  left: 0.25rem;
   cursor: pointer;
 }
 
