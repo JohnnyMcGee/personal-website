@@ -301,7 +301,7 @@ p {
 
 /* SITE WIDE */
 .background {
-  background-image: url("/img/header-background.webp");
+  background-image: url("/img/header-background.jpg");
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -374,7 +374,7 @@ textarea.text-input {
   color: black;
   font-family: "Rubik";
   font-size: 2.6rem;
-  font-weight: 700;
+  font-we`ight: 700;
   letter-spacing: 0.25rem;
   margin: 1.8em 0;
   padding: 1em 2em;
