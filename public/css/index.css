@@ -23,7 +23,8 @@ h1 {
 }
 
 h2,
-h3 {
+h3,
+h5 {
   font-weight: 300;
 }
 
@@ -32,7 +33,7 @@ h2 {
 }
 
 h3 {
-  font-size: 5.5rem;
+  font-size: 5.8rem;
 }
 
 h4 {
@@ -41,16 +42,22 @@ h4 {
 }
 
 h5 {
-  font-size: 3rem;
+  font-size: 2.4rem;
+  font-style: italic;
 }
 
 a {
   text-decoration: none;
 }
 
-p {
-  font-size: 2.75rem;
+p,
+li {
+  font-size: 1.5rem;
   line-height: 2.25em;
+}
+
+li {
+  margin-top: 2rem;
 }
 
 p i {
@@ -64,7 +71,6 @@ input:invalid {
 form {
   row-gap: 2.75rem;
   transition: all 540ms;
-  padding: 3vh 2vw;
   position: relative;
 }
 
@@ -73,9 +79,12 @@ img {
   max-height: 100vh;
   width: auto;
   height: auto;
-  margin: 3em;
   border-radius: 18px;
   position: relative;
+}
+
+article {
+  width: 100%;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -92,7 +101,7 @@ img {
 }
 
 section {
-  padding: 8vh 0;
+  padding: 6vh 0;
 }
 
 @media only screen and (orientation: landscape), (max-resolution: 200dpi) {
@@ -146,6 +155,12 @@ section {
   width: 100%;
 }
 
+.flex-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .flex-col-start {
   display: flex;
   flex-direction: column;
@@ -167,23 +182,16 @@ article.flex-col {
   text-align: end;
 }
 
-/* @media only screen and (orientation: landscape), (max-resolution: 200dpi) {
-  .move-right {
-    text-align: center;
-  }
-} */
+.margin-y-l {
+  margin: 5rem 0;
+}
 
-.pad-y {
-  padding: 2rem 0;
+.margin-y-m {
+  margin: 2rem 0;
 }
 
 .margin-y {
   margin: 1rem 0;
-}
-
-.shift-up {
-  position: relative;
-  top: -1rem;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -248,13 +256,6 @@ article.flex-col {
   min-width: 100%;
 }
 
-.full-width h3,
-h4,
-h5,
-p {
-  max-width: 85vw;
-}
-
 .pad-x {
   margin-top: 0;
   margin-bottom: 0;
@@ -287,14 +288,6 @@ p {
   width: 100%;
 }
 
-/* wide screen mobile and desktop */
-/* @media only screen and (orientation: landscape) and (min-resolution: 200dpi),
-  (min-width: 1100px) {
-  .responsive-wrap {
-    flex-direction: row;
-    align-items: center;
-  }
-} */
 /* TYPOGRAPHY */
 .accent-text {
   font-weight: 700;
@@ -390,16 +383,15 @@ textarea.text-input {
 }
 
 .button {
-  background-color: white;
+  background-color: transparent;
+  border: solid 2px white;
   border-radius: 10em;
-  color: black;
-  font-family: "Rubik";
-  font-size: 2.6rem;
-  font-weight: 700;
-  letter-spacing: 0.25rem;
-  margin: 1.8em 0;
-  padding: 1em 2em;
-  transition: all 240ms ease-in-out;
+  color: white;
+  font-family: "Ubuntu";
+  font-size: 3.25rem;
+  font-weight: 500;
+  padding: 0.75em 2em;
+  transition: all 120ms ease-in-out;
   width: max-content;
 }
 
@@ -408,7 +400,7 @@ textarea.text-input {
   border-color: azure;
   color: white;
   cursor: pointer;
-  font-size: 2.7rem;
+  transform: scale(1.1);
 }
 
 .button:active {
@@ -418,20 +410,8 @@ textarea.text-input {
   cursor: pointer;
 }
 
-@media only screen and (orientation: landscape) {
-  .button {
-    font-size: 1.6rem;
-  }
-  .button:hover {
-    font-size: 1.7rem;
-  }
-}
-
 @media only screen and (max-resolution: 200dpi) {
   .button {
-    font-size: 1.25rem;
-  }
-  .button:hover {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
   }
 }
