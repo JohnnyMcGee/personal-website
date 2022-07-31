@@ -38,7 +38,7 @@ h3 {
 
 h4 {
   font-size: 4.45rem;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 h5 {
@@ -71,6 +71,10 @@ form {
   row-gap: 2.75rem;
   transition: all 540ms;
   position: relative;
+}
+
+form h4 {
+  font-size: 3rem;
 }
 
 img {
@@ -112,6 +116,17 @@ section {
 
   form {
     row-gap: 1rem;
+  }
+
+  form h4 {
+    font-size: 2.5rem;
+  }
+}
+
+/* full screen desktop */
+@media only screen and (min-width: 1100px) {
+  h1 {
+    font-size: 7rem;
   }
 }
 
@@ -383,13 +398,15 @@ textarea.text-input {
 
 @media only screen and (orientation: landscape) {
   .text-input {
-    font-size: 1.85rem;
+    font-size: 1.75rem;
   }
 }
 
+/* desktop */
 @media only screen and (max-resolution: 200dpi) {
   .text-input {
     font-size: 1.4rem;
+    height: 2.5em;
   }
 }
 

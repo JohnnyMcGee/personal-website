@@ -15,7 +15,6 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <link rel="stylesheet" href="/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,6 +30,8 @@
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/menu.css">
 </head>
 
@@ -55,21 +56,23 @@
             </div>
         </div>
     </div>
-    <form action="/contact/" method="POST" class="flex-col offset-top-50">
-        <h2 class="centered">Contact Me</h2>
-        <p><span class="required">*</span> required field</p>
-        <h5>Full Name<span class="required"> *</span></h5>
+    <form action="/contact/" method="POST" class="flex-col offset-top-50 pad-x">
+        <div class="flex-row">
+            <h2 class="centered margin-y-m">Contact Me</h2>
+        </div>
+        <h5><span class="required">*</span> required field</h5>
+        <h4>Full Name<span class="required"> *</span></h4>
         <input type="text" minlength="2" maxlength="64" required="required" name="full_name" class="text-input max-w-28"
             id="name">
-        <h5>Email<span class="required"> *</span></h5>
+        <h4>Email<span class="required"> *</span></h4>
         <input type="email" name="email" minlength="8" maxlength="64" required="required" class="text-input max-w-42">
-        <h5>Phone No.</h5>
+        <h4>Phone No.</h4>
         <input type="tel" name="phone" minlength="10" maxlength="20" class="text-input max-w-22"
             pattern='^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$'>
-        <h5>Message<span class="required"> *</span></h5>
+        <h4>Message<span class="required"> *</span></h4>
         <textarea class="text-input" required="required" minlength="1" maxlength="10000" name="message" id="message"
             class="text-input"></textarea>
-        <input type="submit" value="Send" class="button">
+        <input type="submit" value="Send" class="button margin-y-m">
     </form>
 </body>
 
