@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,300;0,400;1,400&family=Ubuntu:wght@500&display=swap");
 /* GENERAL */
 html,
 body {
@@ -5,33 +6,38 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", "Roboto", Helvetica, sans-serif;
   perspective: 1px;
   transform-style: preserve-3d;
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
   color: white;
   transition: all 120ms ease-in-out;
-  text-align: center;
+  text-align: left;
   background-color: black;
 }
 
 h1 {
   font-size: 10rem;
-  font-family: "Rubik";
+  font-family: "Fredericka the Great";
+}
+
+h2,
+h3 {
+  font-weight: 300;
 }
 
 h2 {
   font-size: 8rem;
-  font-family: "Ubuntu";
 }
 
 h3 {
-  font-size: 5rem;
+  font-size: 5.5rem;
 }
 
 h4 {
   font-size: 4.45rem;
+  font-weight: 500;
 }
 
 h5 {
@@ -85,7 +91,6 @@ img {
   }
 }
 
-article,
 section {
   padding: 8vh 0;
 }
@@ -95,7 +100,7 @@ section {
     font-size: 6rem;
   }
   h2 {
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
   h3 {
     font-size: 2.8rem;
@@ -141,13 +146,20 @@ section {
   width: 100%;
 }
 
+.flex-col-start {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-form.flex-col {
+form.flex-col,
+article.flex-col {
   align-items: start;
 }
 
@@ -155,14 +167,18 @@ form.flex-col {
   text-align: end;
 }
 
-@media only screen and (orientation: landscape), (max-resolution: 200dpi) {
+/* @media only screen and (orientation: landscape), (max-resolution: 200dpi) {
   .move-right {
     text-align: center;
   }
-}
+} */
 
 .pad-y {
-  padding: 2vh 0;
+  padding: 2rem 0;
+}
+
+.margin-y {
+  margin: 1rem 0;
 }
 
 .shift-up {
@@ -239,10 +255,14 @@ p {
   max-width: 85vw;
 }
 
-.pad-x-2 {
+.pad-x {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0 2rem;
+  padding: 0 3rem;
+}
+
+.pad-all {
+  padding: 3rem;
 }
 
 .sticky-header {
@@ -267,13 +287,14 @@ p {
   width: 100%;
 }
 
-@media only screen and (orientation: landscape) and (min-resolution: 200dpi),
+/* wide screen mobile and desktop */
+/* @media only screen and (orientation: landscape) and (min-resolution: 200dpi),
   (min-width: 1100px) {
   .responsive-wrap {
     flex-direction: row;
     align-items: center;
   }
-}
+} */
 /* TYPOGRAPHY */
 .accent-text {
   font-weight: 700;
@@ -287,9 +308,9 @@ p {
 }
 
 .display-text {
-  font-weight: 700;
+  font-weight: 300;
   line-height: 2.25;
-  font-family: "Ubuntu";
+  font-family: "Montserrat";
 }
 
 .subtitle-text {
@@ -374,7 +395,7 @@ textarea.text-input {
   color: black;
   font-family: "Rubik";
   font-size: 2.6rem;
-  font-we`ight: 700;
+  font-weight: 700;
   letter-spacing: 0.25rem;
   margin: 1.8em 0;
   padding: 1em 2em;

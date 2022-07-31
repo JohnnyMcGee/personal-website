@@ -7,9 +7,9 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <!-- <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,500;0,700;1,500;1,700&family=Ubuntu:ital,wght@0,300;0,500;1,300;1,500&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -19,9 +19,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <!-- <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Roboto:ital@0;1&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -52,67 +52,64 @@
     </div>
     <header class="fullscreen flex-col">
         <div class="sticky-header">
-            <div class="responsive-wrap">
-                <h1 class="hero-text pad-x-2 dark-text">Johnny</h1>
-                <h1 class="hero-text pad-x-2 dark-text">McGee</h1>
+            <div class="responsive-wrap pad-x">
+                <h1 class="dark-text move-right">Johnny McGee</h1>
+                <h4 class="move-right">Full Stack Developer</h4>
             </div>
-            <div class="responsive-wrap shift-up">
-                <h4 class="subtitle-text pad-x-2">Full Stack</h4>
-                <h4 class="subtitle-text pad-x-2">Developer</h4>
-            </div>
+        </div>
         </div>
     </header>
     <div class="transp-grad scroll-content">
         <section class="zero-top">
             <article id="about" class="zero-top flex-col">
-                <h3>Why Work With Me?</h3>
-                <ul>
-                    <li>
-                        I have architected full stack mobile and web applications
-                    </li>
-                    <li>I am familiar with Firebase and AWS, and have
-                        no problem adjusting to other cloud platforms</li>
-                    <li>I produce high quality code, documentation and tests</li>
-                    <li> I improve continuously by reading, studying and test-driving new technologies</li>
-                    <li>I excel at tackling challenges I have never seen before</li>
-                    <li>As a team player, I am focused on working together toward the best possible outcome</li>
-                </ul>
-                <h5>My technologies</h5>
-                <ul>
-                    <li>Linux: 3 years</li>
-                    <li>Dart: 2 years</li>
-                    <li>Flutter: 2 years</li>
-                    <li>Node.js: 2 years</li>
-                    <li>Python 3: 2 years</li>
-                    <li>Docker: 1 year</li>
-                    <li>Firebase: 1 year</li>
-                    <li>HTML, CSS & JavaScript: 1 year</li>
-                    <li>React.js: 1 year</li>
-                    <li>Redux: 1 year</li>
-                    <li>SQL: 1 year</li>
-                    <li>Go: 6 months</li>
-                </ul>
-                <h5 class="display-text move-right zero-top">
-                    My <span class="accent-text">passion</span>
-                    is taking apart problems and building <span class="accent-text">creative</span>
-                    solutions <i class="material-symbols-outlined accent">
-                        settings
-                    </i>
-                    <br />
-                    If you are interested in working together,
-                </h5>
-                <form class="centered pad-y" action="/contact/"><input class="button" type="submit"
-                        value="Let's Connect">
-                </form>
+                <div class="full-width pad-all">
+                    <h4 class="margin-y">Why Work With Me?</h4>
+                    <ul>
+                        <li>
+                            I have architected full stack mobile and web applications
+                        </li>
+                        <li>I am familiar with Firebase and AWS, and have
+                            no problem adjusting to other cloud platforms</li>
+                        <li>I produce high quality code, documentation and tests</li>
+                        <li> I improve continuously by reading, studying and test-driving new technologies</li>
+                        <li>I excel at tackling challenges I have never seen before</li>
+                        <li>As a team player, I am focused on working together toward the best possible outcome</li>
+                    </ul>
+                    <div class="pad-all">
 
+                        <h5 class="margin-y">My technologies</h5>
+                        <ul>
+                            <li>Linux: 3 years</li>
+                            <li>Dart: 2 years</li>
+                            <li>Flutter: 2 years</li>
+                            <li>Node.js: 2 years</li>
+                            <li>Python 3: 2 years</li>
+                            <li>Docker: 1 year</li>
+                            <li>Firebase: 1 year</li>
+                            <li>HTML, CSS & JavaScript: 1 year</li>
+                            <li>React.js: 1 year</li>
+                            <li>Redux: 1 year</li>
+                            <li>SQL: 1 year</li>
+                            <li>Go: 6 months</li>
+                        </ul>
+                    </div>
+
+                    <p class="display-text zero-top">
+                        If you are interested in working together,
+                    </p>
+                    <form class="centered pad-y" action="/contact/"><input class="button" type="submit"
+                            value="Let's Connect">
+                    </form>
+                </div>
             </article>
         </section>
         <section id="portfolio" class="flex-col">
-            <h2 class="heading-text">PORTFOLIO</h2>
-            <article id="bubble-brawl" class="full-width gradient-350deg zero-top">
-                <div class="flex-col centered pad-x-2">
-                    <img src="/img/bubble-brawl.jpeg" alt="Bubble Brawl mobile game case study"
-                        title="Bubble Brawl mobile game case study">
+            <h2>PORTFOLIO</h2>
+            <article id="bubble-brawl" class="gradient-350deg zero-top flex-col-start">
+                <img src="/img/bubble-brawl.jpeg" alt="Bubble Brawl mobile game case study"
+                    title="Bubble Brawl mobile game case study">
+                <div class="pad-x">
+
                     <h3>Bubble Brawl</h3>
                     <p>A game that brings people together, and usually devolves into chaos.<span
                             style="font-style:italic;">Case study by Julian Kohann</span></p>
@@ -130,6 +127,7 @@
                         </input>
                     </form>
                 </div>
+
             </article>
             <article id="ancient-game" class="full-width gradient-10deg">
                 <div class="flex-col centered">
@@ -192,8 +190,8 @@
                 </div>
             </article>
         </section>
-        <section id="contact" class="transp-grad-light pad-x-2 flex-col fill-page-height">
-            <h2 class="heading-text">Let's Connect</h2>
+        <section id="contact" class="transp-grad-light pad-x flex-col fill-page-height">
+            <h2>Let's Connect</h2>
             <h5 class="double-space">Thanks for stopping by!
                 <br>
                 To request a consultation or discuss a project,
