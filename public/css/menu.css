@@ -35,7 +35,7 @@
   transition: all 240ms ease-in-out;
 }
 
-@media only screen and (max-resolution: 200dpi) {
+@media only screen and (max-resolution: 200dpi), (orientation: landscape) {
   .navbar {
     height: 5rem;
   }
