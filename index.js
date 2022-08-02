@@ -1,6 +1,9 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
+const http = require ('http');
+const https = require('https');
+const fs = require('fs');
 
 const { initializeApp, cert } = require("firebase-admin/app");
 const { getFirestore, Timestamp } = require("firebase-admin/firestore");
@@ -12,7 +15,6 @@ initializeApp({
 const db = getFirestore();
 
 const app = express();
-const port = 80;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -37,6 +39,18 @@ app.post("/contact/", (req, res) => {
   res.redirect("/");
 });
 
-app.listen(port, () => {
-  console.log(`Johnny McGee is listening on port ${port}`);
+// SERVERS
+
+const httpServer = http.createServer(app);
+const httpsServer = https.createServer({
+  key: fs.readFileSync('/etc/letsencrypt/live/johnnymcgee.com/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/johnnymcgee.com/fullchain.pem'),
+}, app);
+
+httpServer.listen(80, () => {
+  console.log('HTTP Server running on port 80');
+});
+
+httpsServer.listen(443, () => {
+  console.log('HTTPS Server running on port 443');
 });
