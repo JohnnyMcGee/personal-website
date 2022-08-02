@@ -17,6 +17,16 @@ const db = getFirestore();
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.enable('trust proxy')
+// redirect to https
+app.use(function(request, response, next) {
+
+  if (process.env.NODE_ENV != 'development' && !request.secure) {
+     return response.redirect("https://" + request.headers.host + request.url);
+  } else {
+    next();
+  }
+})
 
 // get homepage
 app.use("/", express.static(path.join(__dirname, "public")));
@@ -54,3 +64,4 @@ httpServer.listen(80, () => {
 httpsServer.listen(443, () => {
   console.log('HTTPS Server running on port 443');
 });
+
