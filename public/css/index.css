@@ -83,6 +83,10 @@ img {
   border-radius: 16px;
 }
 
+ul {
+  list-style-type: circle;
+}
+
 article {
   width: 100%;
 }
@@ -139,9 +143,12 @@ section {
 
 .max-100 {
   max-width: 100%;
-  max-height: 120vh;
   height: auto;
   width: auto;
+}
+
+.no-bullets {
+  list-style-type: none;
 }
 
 .fill-page-height {
