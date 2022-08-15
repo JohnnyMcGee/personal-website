@@ -254,6 +254,7 @@ article.flex-col {
 .scroll-content {
   position: relative;
   padding-top: 1vh;
+  transform-origin: bottom;
 }
 
 .scroll-snap-end {
@@ -357,8 +358,8 @@ article.flex-col {
 .background {
   background-image: url("/img/header-background.jpg");
   background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
+  background-position: center;
+  background-attachment: scroll;
   position: absolute;
   top: 0;
   width: 100%;
@@ -367,6 +368,7 @@ article.flex-col {
 
 .parallax {
   transform: translateZ(-50px) scale(53);
+  perspective-origin: bottom;
 }
 
 .double-space {
